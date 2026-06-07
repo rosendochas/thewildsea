@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wildsea - Resumen de Tiradas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="cheat-sheet">
+        <div class="header">
+            <span class="subtitle-top">THE</span>
+            <h1>WILDSEA</h1>
+            <div class="divider"><i class="fa-solid fa-compass"></i></div>
+            <div class="subtitle-bottom">Resumen de las tiradas de dados</div>
+            <h2>ACCIÓN Y REACCIÓN</h2>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="card">
+            <div class="card-left">
+                <div class="number">1</div>
+                <div class="card-icon"><i class="fa-solid fa-dice"></i></div>
+            </div>
+            <div class="card-right">
+                <h3 class="card-title">Reserva de dados</h3>
+                <p>Se tiran dados de seis y la reserva puede contener hasta un máximo de 6 dados.</p>
+                
+                <div class="formula-box">
+                    Reserva = Baza (+1d) + Habilidad (máx. +3d)<br>+ otras ventajas (máx. +2d)
+                </div>
+
+                <ul class="info-list">
+                    <li>
+                        <div class="info-icon"><i class="fa-solid fa-user-large"></i></div>
+                        <div>Solo puedes usar 1 habilidad o idioma por tirada.</div>
+                    </li>
+                    <li>
+                        <div class="info-icon"><i class="fa-solid fa-box-open"></i></div>
+                        <div>Una ventaja puede venir de equipo, entorno, recursos o ayuda de un compañero.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="card">
+            <div class="card-left">
+                <div class="number">2</div>
+                <div class="card-icon"><i class="fa-solid fa-gear"></i></div>
+            </div>
+            <div class="card-right">
+                <h3 class="card-title">Corte e impacto</h3>
+                <div class="corte-layout">
+                    <div class="corte-text">
+                        <ul>
+                            <li><strong>Corte X:</strong> ignora X número de dados empezando por los de valor más alto.</li>
+                            <li><strong>Cambiar corte por impacto:</strong> cada dado de corte asumido añade un nivel de impacto.</li>
+                        </ul>
+                    </div>
+                    <div class="impact-tracks">
+                        <div class="track">
+                            <div class="track-label">NORMAL<span>(1 casilla)</span></div>
+                            <div class="boxes">
+                                <div class="box filled"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                            </div>
+                        </div>
+                        <div class="track">
+                            <div class="track-label">GRAN IMPACTO<span>(2 casillas)</span></div>
+                            <div class="boxes">
+                                <div class="box filled"></div><div class="box filled"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                            </div>
+                        </div>
+                        <div class="track">
+                            <div class="track-label">MASIVO<span>(toda una pista)</span></div>
+                            <div class="boxes">
+                                <div class="box filled"></div><div class="box filled"></div><div class="box filled"></div><div class="box filled"></div><div class="box filled"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="card">
+            <div class="card-left">
+                <div class="number">3</div>
+                <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+            </div>
+            <div class="card-right">
+                <h3 class="card-title">Ayudar</h3>
+                <ul class="info-list" style="border-top: none;">
+                    <li>
+                        <div class="info-icon info-icon-solid"><i class="fa-solid fa-dharmachakra"></i></div>
+                        <div>Dos marineros se unen: uno aporta Baza/Ventajas y otro Habilidades para la tirada.</div>
+                    </li>
+                    <li>
+                        <div class="info-icon info-icon-solid"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>Riesgo compartido: ambos sufren las consecuencias negativas de un Conflicto o Desastre.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="card">
+            <div class="card-left">
+                <div class="number">4</div>
+            </div>
+            <div class="card-right" style="padding: 20px;">
+                <div class="banner-content">
+                    Si no tienes dados en tu reserva, tira 2d<br>y quédate con el valor menor.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="card">
+            <div class="card-left">
+                <div class="number">5</div>
+                <div class="card-icon"><i class="fa-regular fa-compass"></i></div>
+            </div>
+            <div class="card-right">
+                <h3 class="card-title">Interpretar los resultados de la tirada</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th-act">Actuar</th>
+                                <th class="th-react">Reaccionar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-6"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>6 = Triunfo:</strong> logras tu objetivo y ganas una ventaja.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-6 gold"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>6 = Triunfo:</strong> evitas todo daño, efecto o pérdida de posición.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-5"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-4"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>5-4 = Conflicto:</strong> logras tu objetivo, pero hay consecuencias o problemas.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-5 gold"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-4 gold"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>5-4 = Conflicto:</strong> evitas lo peor, pero sufres algún daño menor o complicación.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-3 red"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-2 red"><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-1 red"><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>3-2-1 = Desastre:</strong> no logras tu objetivo y sufres consecuencias graves.</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-3 red"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-2 red"><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-1 red"><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>3-2-1 = Desastre:</strong> recibes todo el daño y sufres consecuencias graves.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>Dobles = Giro:</strong> se produce un cambio inesperado relevante (en combate, impacto +1).</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dice-result">
+                                        <div class="dice-group">
+                                            <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                            <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                                        </div>
+                                        <div class="result-text"><strong>Dobles = Giro:</strong> infliges un daño al atacante.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
