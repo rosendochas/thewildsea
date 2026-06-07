@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wildsea - Portada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Portada-specific overrides */
+        .cover {
+            text-align: center;
+        }
+
+        .cover-img {
+            width: 100%;
+            max-width: 680px;
+            border: 3px solid var(--dark-green);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        .index-card {
+            background-color: var(--parchment);
+            border: 3px solid var(--dark-green);
+            border-radius: 8px;
+            padding: 20px 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .index-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--dark-green);
+            font-size: 1.6rem;
+            text-align: center;
+            margin: 0 0 15px 0;
+            letter-spacing: 1px;
+        }
+
+        .divider-small {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 20px 0;
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        .divider-small::before, .divider-small::after {
+            content: "";
+            height: 1px;
+            background: var(--gold);
+            width: 80px;
+            margin: 0 10px;
+        }
+
+        .index-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .index-list li {
+            border-bottom: 1px dotted #aaa;
+        }
+
+        .index-list li:last-child {
+            border-bottom: none;
+        }
+
+        .index-list a {
+            display: flex;
+            align-items: center;
+            padding: 13px 10px;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: background-color 0.2s, padding-left 0.2s;
+            border-radius: 4px;
+        }
+
+        .index-list a:hover {
+            background-color: rgba(214, 168, 72, 0.15);
+            padding-left: 15px;
+        }
+
+        .index-num {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--dark-green);
+            color: var(--parchment);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lora', serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .index-icon {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-right: 12px;
+            width: 22px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .index-text {
+            flex-grow: 1;
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        .index-text strong {
+            font-family: 'Lora', serif;
+            color: var(--dark-green);
+            font-size: 1.05rem;
+        }
+
+        .index-text span {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .index-arrow {
+            color: var(--gold);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .coming-soon {
+            opacity: 0.5;
+            cursor: default;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cheat-sheet cover">
+
+        <!-- Cover image -->
+        <img src="portada.png" alt="The Wildsea - Portada" class="cover-img">
+
+        <!-- Header -->
+        <div class="header">
+            <span class="subtitle-top">THE</span>
+            <h1>WILDSEA</h1>
+            <div class="divider"><i class="fa-solid fa-compass"></i></div>
+            <div class="subtitle-bottom">Ayuda de juego</div>
+            <h2>ÍNDICE</h2>
+        </div>
+
+        <!-- Index -->
+        <div class="index-card">
+            <h3>Navegar por la ayuda</h3>
+            <div class="divider-small"><i class="fa-solid fa-anchor"></i></div>
+            <ul class="index-list">
+                <li>
+                    <a href="001_overview.html">
+                        <div class="index-num">1</div>
+                        <div class="index-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="index-text">
+                            <strong>Descripción general</strong>
+                            <span>El Escenario y El Juego</span>
+                        </div>
+                        <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="002_core.html">
+                        <div class="index-num">2</div>
+                        <div class="index-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="index-text">
+                            <strong>Conceptos Clave</strong>
+                            <span>Core Concepts, Las Olas Susurrantes, Abriendo tu Mente</span>
+                        </div>
+                        <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="003_glossary.html">
+                        <div class="index-num">3</div>
+                        <div class="index-icon"><i class="fa-solid fa-book"></i></div>
+                        <div class="index-text">
+                            <strong>Glosario</strong>
+                            <span>Topología, Argot Agronáutico y Panantropología</span>
+                        </div>
+                        <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="004_bloodlines.html" class="coming-soon">
+                        <div class="index-num">4</div>
+                        <div class="index-icon"><i class="fa-solid fa-dna"></i></div>
+                        <div class="index-text">
+                            <strong>Linajes</strong>
+                            <span>Próximamente</span>
+                        </div>
+                        <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="005_rolls.html">
+                        <div class="index-num">5</div>
+                        <div class="index-icon"><i class="fa-solid fa-dice"></i></div>
+                        <div class="index-text">
+                            <strong>Acción y Reacción</strong>
+                            <span>Resumen de las tiradas de dados</span>
+                        </div>
+                        <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
