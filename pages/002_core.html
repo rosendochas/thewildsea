@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wildsea - Conceptos clave</title>
+    <title data-i18n="core.title"></title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../i18n/i18n.js" defer></script>
 </head>
 <body>
 
     <div class="cheat-sheet">
         <div class="header">
-            <span class="subtitle-top">THE</span>
-            <h1>WILDSEA</h1>
+            <span class="subtitle-top" data-i18n="common.the"></span>
+            <h1 data-i18n="common.wildsea"></h1>
             <div class="divider"><i class="fa-solid fa-compass"></i></div>
-            <div class="subtitle-bottom">Guía del mundo y sus habitantes</div>
-            <h2>CONCEPTOS CLAVE</h2>
+            <div class="subtitle-bottom" data-i18n="core.subtitle_bottom"></div>
+            <h2 data-i18n="core.h2"></h2>
+            <div class="lang-switch">
+                <button type="button" class="lang-btn" data-lang-button="es" data-i18n-attr="aria-label:common.lang_es">
+                    <img src="../img/flag-es.svg" alt="">
+                </button>
+                <button type="button" class="lang-btn" data-lang-button="en" data-i18n-attr="aria-label:common.lang_en">
+                    <img src="../img/flag-en.svg" alt="">
+                </button>
+            </div>
         </div>
+
+
 
         <!-- Section 1 -->
         <div class="card">
@@ -26,39 +37,29 @@
                 <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Conceptos clave</h3>
-                <p class="intro-text">Esta página destaca los aspectos más importantes del mundo.</p>
+                <h3 class="card-title" data-i18n="core.card1_title"></h3>
+                <p class="intro-text" data-i18n="core.card1_intro"></p>
                 
                 <ul class="info-list">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-water"></i></div>
-                        <div class="info-content">
-                            <strong>Las copas de los árboles son un mar:</strong> Aunque están compuestas por ramas y hojas en lugar de agua, las copas de los árboles son como un mar tradicional en muchos aspectos; hay olas (formadas por los contornos naturales del dosel arbóreo), puertos (construidos sobre el poco suelo sólido que queda) y una vasta cantidad de barcos (con sus cascos sostenidos por las ramas). Aunque es posible moverse a través del dosel sin un navío, hacerlo de manera prolongada es un riesgo enorme.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card1_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-mountain"></i></div>
-                        <div class="info-content">
-                            <strong>La tierra es escasa y valiosa:</strong> Las cimas de las montañas y grandes trozos de tierra o escombros atrapados en el dosel actúan como islas y archipiélagos, protegidos ferozmente por sus habitantes. Los asentamientos construidos en estos afloramientos están diseñados pensando más en la seguridad que en la comodidad, lo que les da una apariencia destartalada y múltiples capas de defensa contra las amenazantes olas.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card1_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-seedling"></i></div>
-                        <div class="info-content">
-                            <strong>El crecimiento vegetal es desenfrenado:</strong> Las plantas del mar crecen a un ritmo frenético cuando están conectadas a la Raigambre de Hierro, que es el conjunto de árboles descomunales que hacen la base del dosel por el que navegarás. Una rama que sea cortada permanecerá inerte, pero otra crecerá en su lugar en cuestión de horas. La topografía cambia constantemente y, de vez en cuando, un brote inesperado de crecimiento reclama un barco o una colonia.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card1_item3"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-                        <div class="info-content">
-                            <strong>Las llamas a cielo abierto están prohibidas:</strong> Casi todas las culturas prohíben el uso de fuego mientras se está en el mar, y por una buena razón. Las llamas arden de forma prolongada en la madera del Maragreste y se propaga a una velocidad aterradora. Si se produce un incendio, incluso los enemigos más acérrimos depondrán sus diferencias para combatirlo juntos.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card1_item4"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-vial-virus"></i></div>
-                        <div class="info-content">
-                            <strong>La germinaria corrompe al contacto:</strong> Secretada por la vegetación más peligrosa del Maragreste, la germinaria es una potente toxina. Un contacto mínimo no hace mucho más que quemar la piel, pero una exposición a largo plazo deforma tanto el cuerpo como la mente de formas aterradoras.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card1_item5"></div>
                     </li>
                 </ul>
             </div>
@@ -71,27 +72,21 @@
                 <div class="card-icon"><i class="fa-solid fa-wind"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Las Olas Susurrantes</h3>
-                <p class="intro-text">Caprichosas. Bellas. Peligrosas. Hay muchas formas de describir las olas de ramas y hojas del Maragreste, pero ninguna palabra por sí sola les hace justicia. Son una maraña de vida, o de muchas vidas; la naturaleza en guerra con la civilización y consigo misma, un torbellino de crecimiento en movimiento.</p>
+                <h3 class="card-title" data-i18n="core.card2_title"></h3>
+                <p class="intro-text" data-i18n="core.card2_intro"></p>
                 
                 <ul class="info-list">
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-ear-listen"></i></div>
-                        <div class="info-content">
-                            <strong>El movimiento:</strong> Lo primero que la mayoría nota es el movimiento. Ya sea por el roce de los vientos de gran altitud o por el trajín de bestias e insectos, el dosel del Maragreste nunca descansa. El efecto es similar al de las olas del antiguo mar salado, con marejadas y mareas. Incluso un barco fondeado sigue balanceándose al subir y bajar las ramas bajo su casco.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card2_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-ear-listen"></i></div>
-                        <div class="info-content">
-                            <strong>El ruido:</strong> Lo segundo que notarás es el ruido. El Maragreste nunca está en silencio. Está el susurro constante de las hojas, el crujido de las ramas, el zumbido de incontables insectos, las llamadas de aves y lémures, y los gritos de los marineros en la borda. Se cantan salomas arbóreas y el núcleo de los barcos ruge en lo profundo de sus cascos. La vida hace ruido, y el Maragreste está lleno de vida.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card2_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-skull"></i></div>
-                        <div class="info-content">
-                            <strong>El peligro:</strong> No todo lo que mora las olas quiere matarte, pero sí lo suficiente. Hay bestias que cazan barcos, ansiosas por alimentarse de los naufragios que dejan a su paso. Los insectos construyen colmenas en la madera y en la carne de formas inescrutables. Incluso los espíritus cazan y son cazados a su vez. Y, como una presencia por debajo de las capas de presas y depredación, los leviatanes acechan esperando su momento.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card2_item3"></div>
                     </li>
                 </ul>
             </div>
@@ -104,33 +99,35 @@
                 <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Abriendo la mente</h3>
-                <p class="intro-text">Algunos cometen el error de pensar que las olas son un tapiz de árboles y poco más, pero nada más lejos de la realidad: el mundo del Maragreste es un mundo de vida y crecimiento, con toda la diversidad que eso conlleva.</p>
+                <h3 class="card-title" data-i18n="core.card3_title"></h3>
+                <p class="intro-text" data-i18n="core.card3_intro"></p>
                 
                 <ul class="info-list">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-earth-americas"></i></div>
-                        <div class="info-content">
-                            <strong>Diversidad vegetal:</strong> Los barcos del este cortan a través de gigantescas pencas de cactus, con sus cascos reforzados frente a las espinas implacables. Otros lugares están cubiertos de hongos devoradores, empantanados por regüeldos de gas nocivo o asfixiados por tallos de pasto de un kilómetro de altura. En Terminus, las ramas se clavan como rieles; en Campanaviva, el latón crece y las flores cantan.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card3_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-arrow-down-long"></i></div>
-                        <div class="info-content">
-                            <strong>Las profundidades:</strong> Cuanto más profundo viajas, más presente se vuelve la inmensidad del mar. Hay una presión que aumenta a medida que desciendes; no física, sino más bien mental. Al sumergirte bajo el dosel, no solo viajas a través del espacio, sino a través de la historia, pasando de la luz a una oscuridad de ruinas y misterios, de reliquias desenterradas. Las ramas serpentean alrededor de secretos de eras anteriores. El conocimiento mismo es un peso, y aquellos impulsados a sumergirse se entrenan para no doblegarse ante él.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card3_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                        <div class="info-content">
-                            <strong>¿Qué hubo antes?:</strong> Nadie lo sabe realmente. Los habitantes más viejos del Maragreste solo tienen recuerdos dispersos, pues sus cuerpos duran más que sus mentes. Algunos, despertados del ámbar, recuerdan el viejo mundo como si fuera un sueño. Otros dependen de retazos de tapices o libros mohosos. Cualquier conocimiento que la gente tenga del pasado es lo que el mar elige dar, o lo que pueden dragar de los lugares más profundos. La mayoría se ha acostumbrado a vivir en el presente, utilizando lo que pueden sin intentar comprender los misterios detrás de sus hallazgos.
-                        </div>
+                        <div class="info-content" data-i18n-html="core.card3_item3"></div>
                     </li>
                 </ul>
             </div>
         </div>
 
     </div>
+
+
+        <div class="back-nav">
+            <a href="../index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="common.back_index">Índice</span>
+            </a>
+        </div>
 
 </body>
 </html>

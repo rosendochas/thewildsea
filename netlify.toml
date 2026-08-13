@@ -1,2 +1,37 @@
 [build]
   publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/es/"
+  status = 302
+
+[[redirects]]
+  from = "/es"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/es/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/es/*"
+  to = "/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 200

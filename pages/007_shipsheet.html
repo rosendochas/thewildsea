@@ -4,70 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wildsea - Ship Sheet</title>
+    <title data-i18n="ship.title">The Wildsea - Sheet del barco</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles-forms.css">
+    <script src="../i18n/i18n.js" defer></script>
 </head>
 
 <body>
+    <div class="lang-switch">
+        <button type="button" class="lang-btn" data-lang-button="es" data-i18n-attr="aria-label:common.lang_es">
+            <img src="../img/flag-es.svg" alt="">
+        </button>
+        <button type="button" class="lang-btn" data-lang-button="en" data-i18n-attr="aria-label:common.lang_en">
+            <img src="../img/flag-en.svg" alt="">
+        </button>
+    </div>
+
     <main class="page">
         <section class="sheet">
             <!-- ===== COLUMN 1 ===== -->
             <div class="column column-left">
                 <section class="logo-block">
                     <h1>THE WILDSEA</h1>
-                    <p>HOJA DE LA EMBARCACIÓN</p>
+                    <p data-i18n="ship.title_sub">HOJA DE LA EMBARCACIÓN</p>
                 </section>
 
                 <section class="panel">
-                    <div class="panel-title">NOMBRE</div>
+                    <div class="panel-title" data-i18n="ship.name_title">NOMBRE</div>
                     <div class="name-box"></div>
                 </section>
 
                 <section class="panel">
-                    <div class="panel-title">ESTADÍSTICAS</div>
+                    <div class="panel-title" data-i18n="ship.stats_title">ESTADÍSTICAS</div>
                     <div class="ratings-list">
-                        <div class="rating-row"><span class="rating-label">Armadura</span>
+                        <div class="rating-row"><span class="rating-label" data-i18n="ship.stat_armour">Armadura</span>
                             <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                         </div>
-                        <div class="rating-row"><span class="rating-label">Sellado</span>
+                        <div class="rating-row"><span class="rating-label" data-i18n="ship.stat_seals">Sellado</span>
                             <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                         </div>
-                        <div class="rating-row"><span class="rating-label">Velocidad</span>
+                        <div class="rating-row"><span class="rating-label" data-i18n="ship.stat_speed">Velocidad</span>
                             <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                         </div>
-                        <div class="rating-row"><span class="rating-label">Sierras</span>
+                        <div class="rating-row"><span class="rating-label" data-i18n="ship.stat_saws">Sierras</span>
                             <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                         </div>
-                        <div class="rating-row"><span class="rating-label">Sigilo</span>
+                        <div class="rating-row"><span class="rating-label" data-i18n="ship.stat_stealth">Sigilo</span>
                             <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                         </div>
-                        <div class="rating-row"><span class="rating-label">Escora</span>
+                        <div class="rating-row"><span class="rating-label" data-i18n="ship.stat_tilt">Escora</span>
                             <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                         </div>
                     </div>
                 </section>
 
                 <section class="panel">
-                    <div class="panel-title">DISEÑO</div>
+                    <div class="panel-title" data-i18n="ship.design_title">DISEÑO</div>
                     <div class="card tall">
-                        <div class="card-title">TAMAÑO</div>
+                        <div class="card-title" data-i18n="ship.design_size">TAMAÑO</div>
                     </div>
                     <div class="card tall">
-                        <div class="card-title">MARCO</div>
+                        <div class="card-title" data-i18n="ship.design_frame">MARCO</div>
                     </div>
                     <div class="card tall">
-                        <div class="card-title">CASCO</div>
+                        <div class="card-title" data-i18n="ship.design_hull">CASCO</div>
                     </div>
                     <div class="card tall">
-                        <div class="card-title">MORDIDA</div>
+                        <div class="card-title" data-i18n="ship.design_bite">MORDIDA</div>
                     </div>
                     <div class="card tall">
-                        <div class="card-title">MOTOR</div>
+                        <div class="card-title" data-i18n="ship.design_engine">MOTOR</div>
                     </div>
                 </section>
             </div>
@@ -76,16 +86,16 @@
             <div class="column column-middle">
                 <div class="side-pair">
                     <section class="panel">
-                        <div class="panel-title">ESTADO</div>
+                        <div class="panel-title" data-i18n="ship.condition_title">ESTADO</div>
                         <div class="writing-box large"></div>
                     </section>
 
                     <section class="panel">
-                        <div class="panel-title">APUESTAS</div>
+                        <div class="panel-title" data-i18n="ship.stakes_title">APUESTAS</div>
                         <div class="background-box">
                             <div class="lines">
-                                <div class="line-row"><span>Usadas:</span><span class="line"></span></div>
-                                <div class="line-row"><span>Totales:</span><span class="line"></span></div>
+                                <div class="line-row"><span data-i18n="ship.stakes_used">Usadas:</span><span class="line"></span></div>
+                                <div class="line-row"><span data-i18n="ship.stakes_total">Totales:</span><span class="line"></span></div>
                             </div>
                         </div>
                     </section>
@@ -93,23 +103,23 @@
 
 
                 <section class="panel">
-                    <div class="panel-title">EQUIPAMIENTO</div>
+                    <div class="panel-title" data-i18n="ship.fittings_title">EQUIPAMIENTO</div>
                     <div class="card" style="min-height:auto;">
-                        <div class="card-title">Ornamentos / Añadidos / Habitáculos</div>
+                        <div class="card-title" data-i18n="ship.fittings_motifs">Ornamentos / Añadidos / Habitáculos</div>
                         <div class="writing-box lined" style="min-height:180px;"></div>
                     </div>
                     <div class="card" style="min-height:auto;">
-                        <div class="card-title">Armamento</div>
+                        <div class="card-title" data-i18n="ship.fittings_armaments">Armamento</div>
                         <div class="writing-box lined" style="min-height:180px;"></div>
                     </div>
                     <div class="card" style="min-height:auto;">
-                        <div class="card-title">Esquifes</div>
+                        <div class="card-title" data-i18n="ship.fittings_outriders">Esquifes</div>
                         <div class="writing-box lined" style="min-height:180px;"></div>
                     </div>
                 </section>
 
                 <section class="panel">
-                    <div class="panel-title">NOTAS</div>
+                    <div class="panel-title" data-i18n="ship.notes_title">NOTAS</div>
                     <div class="writing-box lined" style="min-height:180px;"></div>
                 </section>
             </div>
@@ -119,7 +129,7 @@
 
 
                 <section class="panel">
-                    <div class="panel-title">REPUTACIÓN</div>
+                    <div class="panel-title" data-i18n="ship.reputation_title">REPUTACIÓN</div>
                     <div class="mire-list">
                         <div class="mire-row"><span class="long-line"></span><span
                                 class="dots"><i></i><i></i><i></i><i></i></span></div>
@@ -135,53 +145,53 @@
                 </section>
 
                 <section class="panel">
-                    <div class="panel-title">MARINERÍA</div>
+                    <div class="panel-title" data-i18n="ship.undercrew_title">MARINERÍA</div>
                     <div class="track-stack">
                         <article class="track-box compact-track">
-                            <div class="track-side">Nombre<div class="details">Detalles:</div>
+                            <div class="track-side"><span data-i18n="ship.track_name">Nombre</span><div class="details" data-i18n="ship.track_details">Detalles:</div>
                             </div>
                             <div class="track-main">
-                                <div class="track-meta">Oficial / Banda / Manada</div>
+                                <div class="track-meta" data-i18n="ship.track_meta">Oficial / Banda / Manada</div>
                                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                                 </div>
                                 <div class="track-meta" style="margin-top:4px;"></div>
                             </div>
                         </article>
                         <article class="track-box compact-track">
-                            <div class="track-side">Nombre<div class="details">Detalles:</div>
+                            <div class="track-side"><span data-i18n="ship.track_name">Nombre</span><div class="details" data-i18n="ship.track_details">Detalles:</div>
                             </div>
                             <div class="track-main">
-                                <div class="track-meta">Oficial / Banda / Manada</div>
+                                <div class="track-meta" data-i18n="ship.track_meta">Oficial / Banda / Manada</div>
                                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                                 </div>
                                 <div class="track-meta" style="margin-top:4px;"></div>
                             </div>
                         </article>
                         <article class="track-box compact-track">
-                            <div class="track-side">Nombre<div class="details">Detalles:</div>
+                            <div class="track-side"><span data-i18n="ship.track_name">Nombre</span><div class="details" data-i18n="ship.track_details">Detalles:</div>
                             </div>
                             <div class="track-main">
-                                <div class="track-meta">Oficial / Banda / Manada</div>
+                                <div class="track-meta" data-i18n="ship.track_meta">Oficial / Banda / Manada</div>
                                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                                 </div>
                                 <div class="track-meta" style="margin-top:4px;"></div>
                             </div>
                         </article>
                         <article class="track-box compact-track">
-                            <div class="track-side">Nombre<div class="details">Detalles:</div>
+                            <div class="track-side"><span data-i18n="ship.track_name">Nombre</span><div class="details" data-i18n="ship.track_details">Detalles:</div>
                             </div>
                             <div class="track-main">
-                                <div class="track-meta">Oficial / Banda / Manada</div>
+                                <div class="track-meta" data-i18n="ship.track_meta">Oficial / Banda / Manada</div>
                                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                                 </div>
                                 <div class="track-meta" style="margin-top:4px;"></div>
                             </div>
                         </article>
                         <article class="track-box compact-track">
-                            <div class="track-side">NAME<div class="details">Detalles:</div>
+                            <div class="track-side"><span data-i18n="ship.track_name">Nombre</span><div class="details" data-i18n="ship.track_details">Detalles:</div>
                             </div>
                             <div class="track-main">
-                                <div class="track-meta">Oficial / Banda / Manada</div>
+                                <div class="track-meta" data-i18n="ship.track_meta">Oficial / Banda / Manada</div>
                                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                                 </div>
                                 <div class="track-meta" style="margin-top:4px;"></div>
@@ -191,12 +201,20 @@
                 </section>
 
                 <section class="panel">
-                    <div class="panel-title">CARGAMENTO &amp; PASAJEROS</div>
+                    <div class="panel-title" data-i18n="ship.cargo_title">CARGAMENTO &amp; PASAJEROS</div>
                     <div class="writing-box lined" style="min-height:180px;"></div>
                 </section>
             </div>
         </section>
     </main>
+
+        <div class="back-nav">
+                    <a href="../index.html" class="back-link">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span data-i18n="common.back_index">Índice</span>
+                    </a>
+                </div>
+
 </body>
 
 </html>

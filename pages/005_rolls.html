@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wildsea - Resumen de tiradas</title>
+    <title data-i18n="rolls.title"></title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../i18n/i18n.js" defer></script>
 </head>
 <body>
 
     <div class="cheat-sheet">
         <div class="header">
-            <span class="subtitle-top">THE</span>
-            <h1>WILDSEA</h1>
+            <span class="subtitle-top" data-i18n="common.the"></span>
+            <h1 data-i18n="common.wildsea"></h1>
             <div class="divider"><i class="fa-solid fa-compass"></i></div>
-            <div class="subtitle-bottom">Resumen de las tiradas de dados</div>
-            <h2>ACCIÓN Y REACCIÓN</h2>
+            <div class="subtitle-bottom" data-i18n="rolls.subtitle_bottom"></div>
+            <h2 data-i18n="rolls.h2"></h2>
+            <div class="lang-switch">
+                <button type="button" class="lang-btn" data-lang-button="es" data-i18n-attr="aria-label:common.lang_es">
+                    <img src="../img/flag-es.svg" alt="">
+                </button>
+                <button type="button" class="lang-btn" data-lang-button="en" data-i18n-attr="aria-label:common.lang_en">
+                    <img src="../img/flag-en.svg" alt="">
+                </button>
+            </div>
         </div>
+
+
 
         <!-- Section 1 -->
         <div class="card">
@@ -26,21 +37,19 @@
                 <div class="card-icon"><i class="fa-solid fa-dice"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Reserva de dados</h3>
-                <p>Se tiran dados de 6 y la reserva puede contener hasta un máximo de seis dados.</p>
+                <h3 class="card-title" data-i18n="rolls.card1_title"></h3>
+                <p data-i18n="rolls.card1_intro"></p>
                 
-                <div class="formula-box">
-                    Reserva = baza (+1d) + habilidad (máx. +3d)<br>+ otras ventajas (máx. +2d)
-                </div>
+                <div class="formula-box" data-i18n-html="rolls.card1_formula"></div>
 
                 <ul class="info-list">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-user-large"></i></div>
-                        <div>Solo puedes usar una habilidad o idioma por tirada.</div>
+                        <div data-i18n="rolls.card1_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-box-open"></i></div>
-                        <div>Las ventajas pueden venir de equipo, entorno, recursos o ayuda de un compañero.</div>
+                        <div data-i18n="rolls.card1_item2"></div>
                     </li>
                 </ul>
             </div>
@@ -53,29 +62,29 @@
                 <div class="card-icon"><i class="fa-solid fa-gear"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Corte e impacto</h3>
+                <h3 class="card-title" data-i18n="rolls.card2_title"></h3>
                 <div class="corte-layout">
                     <div class="corte-text">
                         <ul>
-                            <li><strong>Corte <em>x:</em></strong> Ignora <em>x</em> número de dados empezando por los de valor más alto.</li>
-                            <li><strong>Cambiar corte por impacto:</strong> Cada dado de corte asumido añade un nivel de impacto.</li>
+                            <li data-i18n-html="rolls.card2_rule1"></li>
+                            <li data-i18n-html="rolls.card2_rule2"></li>
                         </ul>
                     </div>
                     <div class="impact-tracks">
                         <div class="track">
-                            <div class="track-label">NORMAL<span>(1 casilla)</span></div>
+                            <div class="track-label" data-i18n-html="rolls.card2_track1"></div>
                             <div class="boxes">
                                 <div class="box filled"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
                             </div>
                         </div>
                         <div class="track">
-                            <div class="track-label">GRAN IMPACTO<span>(2 casillas)</span></div>
+                            <div class="track-label" data-i18n-html="rolls.card2_track2"></div>
                             <div class="boxes">
                                 <div class="box filled"></div><div class="box filled"></div><div class="box"></div><div class="box"></div><div class="box"></div>
                             </div>
                         </div>
                         <div class="track">
-                            <div class="track-label">MASIVO<span>(toda una pista)</span></div>
+                            <div class="track-label" data-i18n-html="rolls.card2_track3"></div>
                             <div class="boxes">
                                 <div class="box filled"></div><div class="box filled"></div><div class="box filled"></div><div class="box filled"></div><div class="box filled"></div>
                             </div>
@@ -92,15 +101,15 @@
                 <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Ayudar</h3>
+                <h3 class="card-title" data-i18n="rolls.card3_title"></h3>
                 <ul class="info-list" style="border-top: none;">
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-dharmachakra"></i></div>
-                        <div>Dos agronautas se unen para una tirada: uno aporta baza/ventajas y otro, habilidades.</div>
+                        <div data-i18n="rolls.card3_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div>Riesgo compartido: Ambos sufren las consecuencias negativas de un conflicto o desastre.</div>
+                        <div data-i18n="rolls.card3_item2"></div>
                     </li>
                 </ul>
             </div>
@@ -112,9 +121,7 @@
                 <div class="number">4</div>
             </div>
             <div class="card-right" style="padding: 20px;">
-                <div class="banner-content">
-                    Si no tienes dados en tu reserva, tira 2d<br>y quédate con el valor menor.
-                </div>
+                <div class="banner-content" data-i18n-html="rolls.card4_banner"></div>
             </div>
         </div>
 
@@ -125,13 +132,13 @@
                 <div class="card-icon"><i class="fa-regular fa-compass"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Interpretar los resultados de la tirada</h3>
+                <h3 class="card-title" data-i18n="rolls.card5_title"></h3>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
-                                <th class="th-act">Actuar</th>
-                                <th class="th-react">Reaccionar</th>
+                                <th class="th-act" data-i18n="rolls.card5_th_act"></th>
+                                <th class="th-react" data-i18n="rolls.card5_th_react"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -141,7 +148,7 @@
                                         <div class="dice-group">
                                             <div class="die-face face-6"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>6 = triunfo:</strong> Logras tu objetivo y ganas una ventaja.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_act_6"></div>
                                     </div>
                                 </td>
                                 <td>
@@ -149,7 +156,7 @@
                                         <div class="dice-group">
                                             <div class="die-face face-6 gold"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>6 = triunfo:</strong> Evitas todo daño, efecto o pérdida de posición.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_react_6"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -160,7 +167,7 @@
                                             <div class="die-face face-5"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                             <div class="die-face face-4"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>5-4 = conflicto:</strong> Logras tu objetivo, pero hay consecuencias o problemas.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_act_54"></div>
                                     </div>
                                 </td>
                                 <td>
@@ -169,7 +176,7 @@
                                             <div class="die-face face-5 gold"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                             <div class="die-face face-4 gold"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>5-4 = conflicto:</strong> Evitas lo peor, pero sufres algún daño menor o complicación.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_react_54"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -181,7 +188,7 @@
                                             <div class="die-face face-2 red"><div class="dot"></div><div class="dot"></div></div>
                                             <div class="die-face face-1 red"><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>3-2-1 = desastre:</strong> No logras tu objetivo y sufres consecuencias graves.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_act_321"></div>
                                     </div>
                                 </td>
                                 <td>
@@ -191,7 +198,7 @@
                                             <div class="die-face face-2 red"><div class="dot"></div><div class="dot"></div></div>
                                             <div class="die-face face-1 red"><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>3-2-1 = desastre:</strong> Recibes todo el daño y sufres consecuencias graves.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_react_321"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -202,7 +209,7 @@
                                             <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                             <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>Dobles = giro:</strong> Se produce un cambio inesperado relevante (en combate, impacto +1).</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_act_doubles"></div>
                                     </div>
                                 </td>
                                 <td>
@@ -211,7 +218,7 @@
                                             <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                             <div class="die-face face-4 white"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
                                         </div>
-                                        <div class="result-text"><strong>Dobles = giro:</strong> Infliges un daño al atacante.</div>
+                                        <div class="result-text" data-i18n-html="rolls.card5_react_doubles"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -222,6 +229,14 @@
         </div>
 
     </div>
+
+
+        <div class="back-nav">
+            <a href="../index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="common.back_index">Índice</span>
+            </a>
+        </div>
 
 </body>
 </html>

@@ -3,79 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Wildsea - Hoja de Personaje</title>
+  <title data-i18n="chars.title">The Wildsea - Hoja de Personaje</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles-forms.css">
+  <script src="../i18n/i18n.js" defer></script>
 </head>
 <body>
+  <div class="lang-switch">
+    <button type="button" class="lang-btn" data-lang-button="es" data-i18n-attr="aria-label:common.lang_es">
+      <img src="../img/flag-es.svg" alt="">
+    </button>
+    <button type="button" class="lang-btn" data-lang-button="en" data-i18n-attr="aria-label:common.lang_en">
+      <img src="../img/flag-en.svg" alt="">
+    </button>
+  </div>
+
   <main class="page">
     <section class="sheet">
       <div class="column column-left">
         <section class="logo-block">
           <h1>THE WILDSEA</h1>
-          <p>HOJA DE PERSONAJE</p>
+          <p data-i18n="chars.title_sub">HOJA DE PERSONAJE</p>
         </section>
 
         <section class="panel">
-          <div class="panel-title">CÓMO JUGAR</div>
+          <div class="panel-title" data-i18n="chars.how_to_play">CÓMO JUGAR</div>
           <div class="play-grid">
             <div class="card">
-              <div class="card-title">PARA TIRAR</div>
+              <div class="card-title" data-i18n="chars.for_rolls">PARA TIRAR</div>
               <div class="mini-table">
-                <div>Baza</div><div>(1d6)</div>
-                <div>Habilidad</div><div>(Hasta 3d6)</div>
-                <div>Ventaja</div><div>(Hasta 2d6)</div>
+                <div data-i18n="chars.baza">Baza</div><div>(1d6)</div>
+                <div data-i18n="chars.skill">Habilidad</div><div data-i18n="chars.up_to_3d6">(Hasta 3d6)</div>
+                <div data-i18n="chars.edge">Ventaja</div><div data-i18n="chars.up_to_2d6">(Hasta 2d6)</div>
               </div>
             </div>
             <div class="card">
-              <div class="card-title">RESULTADOS</div>
+              <div class="card-title" data-i18n="chars.results">RESULTADOS</div>
               <div class="mini-table">
-                <div>Triunfo</div><div>[6]</div>
-                <div>Conflicto</div><div>[5/4]</div>
-                <div>Desastre</div><div>[3/2/1]</div>
-                <div>Giro</div><div>[Dobles]</div>
+                <div data-i18n="chars.triumph">Triunfo</div><div>[6]</div>
+                <div data-i18n="chars.conflict">Conflicto</div><div>[5/4]</div>
+                <div data-i18n="chars.disaster">Desastre</div><div>[3/2/1]</div>
+                <div data-i18n="chars.twist">Giro</div><div data-i18n="chars.doubles">[Dobles]</div>
               </div>
             </div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">TRASFONDO</div>
+          <div class="panel-title" data-i18n="chars.background">TRASFONDO</div>
           <div class="background-box">
             <div class="lines">
-              <div class="line-row"><span>Nombre:</span><span class="line"></span></div>
-              <div class="line-row"><span>Jugador:</span><span class="line"></span></div>
-              <div class="line-row"><span>Linaje:</span><span class="line"></span></div>
-              <div class="line-row"><span>Origen:</span><span class="line"></span></div>
-              <div class="line-row"><span>Puesto:</span><span class="line"></span></div>
+              <div class="line-row"><span data-i18n="chars.name">Nombre:</span><span class="line"></span></div>
+              <div class="line-row"><span data-i18n="chars.player">Jugador:</span><span class="line"></span></div>
+              <div class="line-row"><span data-i18n="chars.bloodline">Linaje:</span><span class="line"></span></div>
+              <div class="line-row"><span data-i18n="chars.origin">Origen:</span><span class="line"></span></div>
+              <div class="line-row"><span data-i18n="chars.station">Puesto:</span><span class="line"></span></div>
             </div>
             <div class="notes">
-              <div class="note-label">Otras notas:</div>
+              <div class="note-label" data-i18n="chars.other_notes">Otras notas:</div>
             </div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">HITOS</div>
+          <div class="panel-title" data-i18n="chars.milestones">HITOS</div>
           <div class="milestones">
             <div class="card tall">
-              <div class="card-title">MAYOR</div>
+              <div class="card-title" data-i18n="chars.major">MAYOR</div>
             </div>
             <div class="card tall">
-              <div class="card-title">MENOR</div>
+              <div class="card-title" data-i18n="chars.minor">MENOR</div>
             </div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">IMPULSOS</div>
+          <div class="panel-title" data-i18n="chars.drives">IMPULSOS</div>
           <div class="writing-box large"></div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">LASTRES</div>
+          <div class="panel-title" data-i18n="chars.mires">LASTRES</div>
           <div class="mire-list">
             <div class="mire-row"><span class="long-line"></span><span class="end-track"><i></i><i></i></span></div>
             <div class="mire-row"><span class="long-line"></span><span class="end-track"><i></i><i></i></span></div>
@@ -87,82 +97,82 @@
 
       <div class="column column-middle">
         <section class="panel">
-          <div class="panel-title">BAZAS</div>
+          <div class="panel-title" data-i18n="chars.edges_title">BAZAS</div>
           <div class="triple-grid compact">
-            <div class="rating-row"><span>Gracia</span><div class="dots small"><i></i></div></div>
-            <div class="rating-row"><span>Hierro</span><div class="dots small"><i></i></div></div>
-            <div class="rating-row"><span>Instinto</span><div class="dots small"><i></i></div></div>
-            <div class="rating-row"><span>Precisión</span><div class="dots small"><i></i></div></div>
-            <div class="rating-row"><span>Dientes</span><div class="dots small"><i></i></div></div>
-            <div class="rating-row"><span>Mareas</span><div class="dots small"><i></i></div></div>
-            <div class="rating-row"><span>Velos</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_grace">Gracia</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_iron">Hierro</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_instinct">Instinto</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_sharps">Precisión</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_teeth">Dientes</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_tides">Mareas</span><div class="dots small"><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.edge_veils">Velos</span><div class="dots small"><i></i></div></div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">HABILIDADES</div>
+          <div class="panel-title" data-i18n="chars.skills_title">HABILIDADES</div>
           <div class="triple-grid">
-            <div class="rating-row"><span>Resistir</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Tajar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Percibir</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_brace">Resistir</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_hack">Tajar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_sense">Percibir</span><div class="dots"><i></i><i></i><i></i></div></div>
 
-            <div class="rating-row"><span>Romper</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Cosechar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Estudiar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_break">Romper</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_harvest">Cosechar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_study">Estudiar</span><div class="dots"><i></i><i></i><i></i></div></div>
 
-            <div class="rating-row"><span>Preparar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Cazar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Persuadir</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_concoct">Preparar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_hunt">Cazar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_sway">Persuadir</span><div class="dots"><i></i><i></i><i></i></div></div>
 
-            <div class="rating-row"><span>Cocinar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Burlar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Cuidar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_cook">Cocinar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_outwit">Burlar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_tend">Cuidar</span><div class="dots"><i></i><i></i><i></i></div></div>
 
-            <div class="rating-row"><span>Profundizar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Agitar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Bricar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_delve">Profundizar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_rattle">Agitar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_vault">Bricar</span><div class="dots"><i></i><i></i><i></i></div></div>
 
-            <div class="rating-row"><span>Lucirse</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Rebuscar</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Surcar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_flourish">Lucirse</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_scavenge">Rebuscar</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_wavewalk">Surcar</span><div class="dots"><i></i><i></i><i></i></div></div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">IDIOMAS</div>
+          <div class="panel-title" data-i18n="chars.languages_title">IDIOMAS</div>
           <div class="double-grid">
-            <div class="rating-row"><span>Bajoagrio</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Chthónico</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Saprekk</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Gaudimm</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Clic</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Latón</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Rakastinga</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Muerdoliro</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Tokotoka</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Altirado</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Manoajado</span><div class="dots"><i></i><i></i><i></i></div></div>
-            <div class="rating-row"><span>Señales navales</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.skill_lowsour">Bajoagrio</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_chthonic">Chthónico</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_saprekk">Saprekk</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_gaudimm">Gaudimm</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_lyrebite">Clic</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_brasstongue">Latón</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_rakaspit">Rakastinga</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_mothryx">Muerdoliro</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_knock">Tokotoka</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_highvin">Altirado</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_oldhand">Manoajado</span><div class="dots"><i></i><i></i><i></i></div></div>
+            <div class="rating-row"><span data-i18n="chars.lang_signalling">Señales navales</span><div class="dots"><i></i><i></i><i></i></div></div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel-title">RECURSOS</div>
+          <div class="panel-title" data-i18n="chars.resources_title">RECURSOS</div>
           <div class="resources">
             <div class="card resource-card">
-              <div class="card-title">CHATARRA</div>
+              <div class="card-title" data-i18n="chars.resource_salvage">CHATARRA</div>
               <div class="writing-box lined"></div>
             </div>
             <div class="card resource-card">
-              <div class="card-title">ESPECÍMENES</div>
+              <div class="card-title" data-i18n="chars.resource_specimens">ESPECÍMENES</div>
               <div class="writing-box lined"></div>
             </div>
             <div class="card resource-card">
-              <div class="card-title">SUSURROS</div>
+              <div class="card-title" data-i18n="chars.resource_whispers">SUSURROS</div>
               <div class="writing-box lined"></div>
             </div>
             <div class="card resource-card">
-              <div class="card-title">MAPAS</div>
+              <div class="card-title" data-i18n="chars.resource_charts">MAPAS</div>
               <div class="writing-box lined"></div>
             </div>
           </div>
@@ -171,47 +181,47 @@
 
       <div class="column column-right">
         <section class="panel">
-          <div class="panel-title">ASPECTOS</div>
+          <div class="panel-title" data-i18n="chars.aspects_title">ASPECTOS</div>
           <div class="track-stack">
             <article class="track-box">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Rasgo/Equipo/Compañero</div>
+                <div class="track-meta" data-i18n="chars.track_aspect">Rasgo/Equipo/Compañero</div>
                 <div class="beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Rasgo/Equipo/Compañero</div>
+                <div class="track-meta" data-i18n="chars.track_aspect">Rasgo/Equipo/Compañero</div>
                 <div class="beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Rasgo/Equipo/Compañero</div>
+                <div class="track-meta" data-i18n="chars.track_aspect">Rasgo/Equipo/Compañero</div>
                 <div class="beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Rasgo/Equipo/Compañero</div>
+                <div class="track-meta" data-i18n="chars.track_aspect">Rasgo/Equipo/Compañero</div>
                 <div class="beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Rasgo/Equipo/Compañero</div>
+                <div class="track-meta" data-i18n="chars.track_aspect">Rasgo/Equipo/Compañero</div>
                 <div class="beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Rasgo/Equipo/Compañero</div>
+                <div class="track-meta" data-i18n="chars.track_aspect">Rasgo/Equipo/Compañero</div>
                 <div class="beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
@@ -219,26 +229,26 @@
         </section>
 
         <section class="panel temp-panel">
-          <div class="panel-title">PISTAS TEMPORALES</div>
+          <div class="panel-title" data-i18n="chars.temp_tracks_title">PISTAS TEMPORALES</div>
           <div class="track-stack short-stack">
             <article class="track-box compact-track">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Beneficio/Herida/Pista</div>
+                <div class="track-meta" data-i18n="chars.track_temp">Beneficio/Herida/Pista</div>
                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box compact-track">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Beneficio/Herida/Pista</div>
+                <div class="track-meta" data-i18n="chars.track_temp">Beneficio/Herida/Pista</div>
                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
             <article class="track-box compact-track">
-              <div class="track-side">NOMBRE<div class="details">Detalles -</div></div>
+              <div class="track-side"><span data-i18n="chars.track_name">NOMBRE</span><div class="details" data-i18n="chars.track_details">Detalles -</div></div>
               <div class="track-main">
-                <div class="track-meta">Beneficio/Herida/Pista</div>
+                <div class="track-meta" data-i18n="chars.track_temp">Beneficio/Herida/Pista</div>
                 <div class="beads small-beads"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
             </article>
@@ -247,5 +257,13 @@
       </div>
     </section>
   </main>
+
+        <div class="back-nav">
+          <a href="../index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span data-i18n="common.back_index">Índice</span>
+          </a>
+        </div>
+
 </body>
 </html>

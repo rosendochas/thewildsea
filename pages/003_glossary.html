@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wildsea - Glosario</title>
+    <title data-i18n="glossary.title"></title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../i18n/i18n.js" defer></script>
 </head>
 <body>
 
     <div class="cheat-sheet">
         <div class="header">
-            <span class="subtitle-top">THE</span>
-            <h1>WILDSEA</h1>
+            <span class="subtitle-top" data-i18n="common.the"></span>
+            <h1 data-i18n="common.wildsea"></h1>
             <div class="divider"><i class="fa-solid fa-book-journal-whills"></i></div>
-            <div class="subtitle-bottom">Términos y vocabulario del mundo</div>
-            <h2>GLOSARIO</h2>
+            <div class="subtitle-bottom" data-i18n="glossary.subtitle_bottom"></div>
+            <h2 data-i18n="glossary.h2"></h2>
+            <div class="lang-switch">
+                <button type="button" class="lang-btn" data-lang-button="es" data-i18n-attr="aria-label:common.lang_es">
+                    <img src="../img/flag-es.svg" alt="">
+                </button>
+                <button type="button" class="lang-btn" data-lang-button="en" data-i18n-attr="aria-label:common.lang_en">
+                    <img src="../img/flag-en.svg" alt="">
+                </button>
+            </div>
         </div>
+
+
 
         <!-- Section 0 -->
         <div class="card">
@@ -26,26 +37,20 @@
                 <div class="card-icon"><i class="fa-solid fa-scroll"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Historia antigua</h3>
+                <h3 class="card-title" data-i18n="glossary.card1_title"></h3>
                 
                 <ul class="info-list" style="border-top: none;">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-burst"></i></div>
-                        <div class="info-content">
-                            <strong>Exuberancia:</strong> El evento apocalíptico que dio fin a la era anterior hace 300 años.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card1_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-biohazard"></i></div>
-                        <div class="info-content">
-                            <strong>Germinaria:</strong> Es una sustancia tóxica que está directamente relacionada con la exuberancia aunque no se sabe cómo.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card1_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-fire"></i></div>
-                        <div class="info-content">
-                            <strong>La conflagración:</strong> Es una zona al norte en la que arde un fuego terrible que parece que fuera a consumir el mundo entero (de ahí el tabú del fuego en cielo abierto).
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card1_item3"></div>
                     </li>
                 </ul>
             </div>
@@ -57,38 +62,28 @@
                 <div class="card-icon"><i class="fa-solid fa-ghost"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Supersticiones</h3>
+                <h3 class="card-title" data-i18n="glossary.card2_title"></h3>
                 
                 <ul class="info-list" style="border-top: none;">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-person-falling"></i></div>
-                        <div class="info-content">
-                            <strong>Un tripulante caído por la borda</strong> nunca se considera muerto hasta que su cuerpo es recuperado o ha transcurrido un invierno completo. Hay demasiadas historias de agronautas que aparecen en los puertos de Thrashside, enfangados y cubiertos de germinaria, que se han arrastrado a través de milla tras milla de olemas en busca de sus antiguas tripulaciones.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card2_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-eye"></i></div>
-                        <div class="info-content">
-                            <strong>Mirar hacia el norte</strong> mientras se está en maragreste abierto es mala suerte, dado que a menudo ofrece una vista de la distante mancha ennegrecida de la Conflagración, la mayor vergüenza del mundo postverdor.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card2_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-wine-glass"></i></div>
-                        <div class="info-content">
-                            <strong>El primer sorbo de bebida o el primer bocado</strong> debe ser escupido en las olas. No está claro si esta tradición comenzó como una ofrenda al maragreste o como una precaución de seguridad contra la contaminación por germinaria.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card2_item3"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-cross"></i></div>
-                        <div class="info-content">
-                            <strong>Los cuerpos de los agronautas que murieron</strong>, ya se por accidente o vejez, pueden ser tratados de muchas maneras, dependiendo de sus culturas y creencias en la vida, pero para aquellos sin familias o sin última voluntad, dejarlos caer por una grieta es una de las formas más respetuosas de rendir homenaje al caído.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card2_item4"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-shirt"></i></div>
-                        <div class="info-content">
-                            <strong>Vestirse con ropas verdes</strong> o llevar una esporela teñida de ese color invita a la ruina: si caes por la borda será más difícil distinguirte.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card2_item5"></div>
                     </li>
                 </ul>
             </div>
@@ -100,94 +95,48 @@
                 <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Topología agromarítima</h3>
+                <h3 class="card-title" data-i18n="glossary.card3_title"></h3>
                 
                 <ul class="info-list" style="border-top: none;">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-leaf"></i></div>
-                        <div class="info-content">
-                            <strong>Maragreste:</strong> El mar de vegetación que cubre la superficie del planeta.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-layer-group"></i></div>
-                        <div class="info-content">
-                            <strong>Estratos del Maragreste:</strong>
-                            <ul style="margin-top: 8px; padding-left: 20px; font-size: 0.9rem;">
-                                <li style="border: none; padding: 4px 0; display: block;">
-                                     <div><strong>Los cielos</strong></div>
-                                     <div>Un amplio firmamento azul se extiende sobre el Maragreste: los cielos albergan insectos, aves y algún que otro dirigible, aunque los fuertes vientos y las tormentas imposibilitan un transporte aéreo fiable. La mayoría de quienes se asientan en los cielos se establecen en mesetas, laderas de montañas o ciudades flotantes.</div>
-                                </li>
-                                <li style="border: none; padding: 4px 0; display: block;">
-                                     <div><strong>La maleza</strong></div>
-                                     <div>La capa más alta de los árboles de raíces de hierro que forman el Maragreste. La maleza es un lugar de vida y comercio, un dosel forestal salpicado de cumbres montañosas, arrecifes de naufragios y ciudades improvisadas. Lo que queda de la civilización se concentra sobre todo en estos últimos fragmentos de tierra, y los barcos navegan los mares de hojas que los rodean.</div>
-                                </li>
-                                <li style="border: none; padding: 4px 0; display: block;">
-                                     <div><strong>La maraña</strong></div>
-                                     <div>Aunque la maleza es lo bastante densa como para poder navegarse, es en la maraña donde la mayoría de los barcos apoyan sus cascos, allí donde las ramas empiezan a entrelazarse con gran espesor. La vida, insectos, animales y otros seres, prospera en el calor de esa penumbra, y puede recorrerse con relativa seguridad con suficiente preparación y habilidad.</div>
-                                </li>
-                                <li style="border: none; padding: 4px 0; display: block;">
-                                     <div><strong>El sumidero</strong></div>
-                                     <div>Donde encallan los navíos y reinan los leviatanes. Tan denso como la maraña pero mucho más peligroso, el sumidero recibe su nombre por las traicioneras ramas que lo componen: ya sea por medios naturales o artificiales, la mayoría de las embarcaciones que descienden hasta el sumidero encuentran casi imposible volver a la superficie.</div>
-                                </li>
-                                <li style="border: none; padding: 4px 0; display: block;">
-                                     <div><strong>La prufronda</strong></div>
-                                     <div>El punto de no retorno, donde no hay ya ramas que te sujeten, solo enormes troncos, donde la luz muere. Los troncos de la Raigambre de Hierro se alzan en la oscuridad, apartados unos de otros por distancias imposibles. Hay grandes zonas de la prufronda que nunca han sido tocadas por la luz del sol, que llega solo por contadas grietas.</div>
-                                </li>
-                                <li style="border: none; padding: 4px 0; display: block;">
-                                     <div><strong>La tiniebla insondable</strong></div>
-                                     <div>Las raíces del mar y los huesos del viejo mundo. Cuanto menos se sepa de este lugar, mejor.</div>
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-brands fa-pagelines"></i></div>
-                        <div class="info-content">
-                            <strong>Dosel:</strong> Otra forma de llamar coloquialmente al Maragreste.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item3"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-water"></i></div>
-                        <div class="info-content">
-                            <strong>Olemas:</strong> Las olas formadas por el follaje.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item4"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-anchor"></i></div>
-                        <div class="info-content">
-                            <strong>Raigambre de Hierro:</strong> Las raíces del Maragreste.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item5"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
-                        <div class="info-content">
-                            <strong>Sobretallo:</strong> Un árbol que crece por encima de todos los demás como una torre que casi toca las nubes.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item6"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-ship"></i></div>
-                        <div class="info-content">
-                            <strong>Restinga:</strong> Colonias más o menos efímeras que navegan a la deriva sobre el dosel.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item7"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-mountain"></i></div>
-                        <div class="info-content">
-                            <strong>Islas:</strong> Tierra firme que no es probable que se la traguen los olemas.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item8"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-gem"></i></div>
-                        <div class="info-content">
-                            <strong>Arrecifes:</strong> Afloramientos de chatarra que pueden tener riquezas por descubrir pero que son muy peligrosos.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item9"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-bolt"></i></div>
-                        <div class="info-content">
-                            <strong>Grietas:</strong> Aberturas por las que se puede caer a los estratos más profundos, quizá incluso llegar hasta la Raigambre de Hierro.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card3_item10"></div>
                     </li>
                 </ul>
             </div>
@@ -199,56 +148,40 @@
                 <div class="card-icon"><i class="fa-solid fa-sailboat"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Argot agronáutico</h3>
+                <h3 class="card-title" data-i18n="glossary.card4_title"></h3>
                 
                 <ul class="info-list" style="border-top: none;">
                     <li>
                         <div class="info-icon info-icon-solid"><i class="fa-solid fa-users-viewfinder"></i></div>
-                        <div class="info-content">
-                            <strong>Agronautas:</strong> Quienes navegan el Maragreste.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-compass"></i></div>
-                        <div class="info-content">
-                            <strong>Navegante:</strong> Saben leer los patrones en el Maragreste, saben si una corriente de olemas podrá sujetar el navío o si este se hundirá.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-mask-face"></i></div>
-                        <div class="info-content">
-                            <strong>Esporela:</strong> Prenda que protege contra cualquier partícula nociva que pueda haber en los estratos inferiores (esporas, geminaria, etc.).
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item3"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-shoe-prints"></i></div>
-                        <div class="info-content">
-                            <strong>Caminaolas:</strong> Gentes que han conseguido bucear por el Maragreste sin navío.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item4"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-weight-hanging"></i></div>
-                        <div class="info-content">
-                            <strong>Lastre:</strong> Bagaje personal de un agronauta que a veces le puede arrastrar hasta el fondo más oscuro.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item5"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-water"></i></div>
-                        <div class="info-content">
-                            <strong>Estela:</strong> Brecha que deja el barco al atravesar el Maragreste.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item6"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-binoculars"></i></div>
-                        <div class="info-content">
-                            <strong>Atalaya:</strong> Puesto del vigía en la parte más alta del barco, en el mástil principal normalmente.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item7"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-location-arrow"></i></div>
-                        <div class="info-content">
-                            <strong>Proa, popa, babor, estribor:</strong> Parte delantera, trasera, izquierda y derecha del barco (mirando hacia adelante) respectivamente.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card4_item8"></div>
                     </li>
                 </ul>
             </div>
@@ -261,56 +194,50 @@
                 <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
             </div>
             <div class="card-right">
-                <h3 class="card-title">Panantropología</h3>
+                <h3 class="card-title" data-i18n="glossary.card5_title"></h3>
                 
                 <ul class="info-list" style="border-top: none;">
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-fire"></i></div>
-                        <div class="info-content">
-                            <strong>Ardientes:</strong> Descendientes directos de los humanos que sobrevivieron retirándose a puntos elevados.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item1"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-brands fa-pagelines"></i></div>
-                        <div class="info-content">
-                            <strong>Ektus:</strong> Criaturas mezcla humanoide y cactoide.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item2"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-seedling"></i></div>
-                        <div class="info-content">
-                            <strong>Gau:</strong> Seres fúngicos que no nacen, son cultivados.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item3"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-spider"></i></div>
-                        <div class="info-content">
-                            <strong>Tzelicrae:</strong> Colonias de arañas que se comportan como un único ser (aunque hablan en plural de sí mismos).
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item4"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-robot"></i></div>
-                        <div class="info-content">
-                            <strong>Ferrojurados:</strong> Pecios vivientes.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item5"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-skull"></i></div>
-                        <div class="info-content">
-                            <strong>Ketra:</strong> Descendientes de los humanos pero atrapados en la tiniebla insondable durante generaciones, mutados por la germinaria de formas monstruosas, en cuerpo y alma.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item6"></div>
                     </li>
                     <li>
                         <div class="info-icon"><i class="fa-solid fa-bug"></i></div>
-                        <div class="info-content">
-                            <strong>Lepidoptos:</strong> Criaturas con alas que no son del todo inútiles pero que tampoco les permiten volar, quizá planear un poco.
-                        </div>
+                        <div class="info-content" data-i18n-html="glossary.card5_item7"></div>
                     </li>
                 </ul>
             </div>
         </div>
 
     </div>
+
+
+        <div class="back-nav">
+            <a href="../index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="common.back_index">Índice</span>
+            </a>
+        </div>
 
 </body>
 </html>

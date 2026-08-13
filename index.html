@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wildsea - Portada</title>
+    <title data-i18n="index.title"></title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="i18n/i18n.js" defer></script>
     <style>
         /* Portada-specific overrides */
         .cover {
@@ -143,6 +144,28 @@
             cursor: default;
             pointer-events: none;
         }
+
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .lang-btn {
+            border: 2px solid var(--dark-green);
+            background: var(--parchment);
+            border-radius: 6px;
+            padding: 4px 6px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+        }
+
+        .lang-btn img {
+            width: 28px;
+            height: 18px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -150,20 +173,28 @@
     <div class="cheat-sheet cover">
 
         <!-- Cover image -->
-        <img src="img/portada.png" alt="The Wildsea - Portada" class="cover-img">
+        <img src="img/portada.png" class="cover-img" data-i18n-attr="alt:index.cover_alt">
 
         <!-- Header -->
         <div class="header">
-            <span class="subtitle-top">THE</span>
-            <h1>WILDSEA</h1>
+            <span class="subtitle-top" data-i18n="common.the"></span>
+            <h1 data-i18n="common.wildsea"></h1>
             <div class="divider"><i class="fa-solid fa-compass"></i></div>
-            <div class="subtitle-bottom">Ayuda de juego</div>
-            <h2>ÍNDICE</h2>
+            <div class="subtitle-bottom" data-i18n="index.subtitle_bottom"></div>
+            <h2 data-i18n="index.h2"></h2>
+            <div class="lang-switch">
+                <button type="button" class="lang-btn" data-lang-button="es" data-i18n-attr="aria-label:common.lang_es">
+                    <img src="img/flag-es.svg" alt="">
+                </button>
+                <button type="button" class="lang-btn" data-lang-button="en" data-i18n-attr="aria-label:common.lang_en">
+                    <img src="img/flag-en.svg" alt="">
+                </button>
+            </div>
         </div>
 
         <!-- Index -->
         <div class="index-card">
-            <h3>Navegar por la ayuda</h3>
+            <h3 data-i18n="index.nav_title"></h3>
             <div class="divider-small"><i class="fa-solid fa-anchor"></i></div>
             <ul class="index-list">
                 <li>
@@ -171,8 +202,8 @@
                         <div class="index-num">1</div>
                         <div class="index-icon"><i class="fa-solid fa-globe"></i></div>
                         <div class="index-text">
-                            <strong>Descripción general</strong>
-                            <span>El escenario y el juego</span>
+                            <strong data-i18n="index.item1_title"></strong>
+                            <span data-i18n="index.item1_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
@@ -182,8 +213,8 @@
                         <div class="index-num">2</div>
                         <div class="index-icon"><i class="fa-solid fa-lightbulb"></i></div>
                         <div class="index-text">
-                            <strong>Conceptos clave</strong>
-                            <span>Conceptos clave, las Olas Susurrantes, abriendo la mente</span>
+                            <strong data-i18n="index.item2_title"></strong>
+                            <span data-i18n="index.item2_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
@@ -193,8 +224,8 @@
                         <div class="index-num">3</div>
                         <div class="index-icon"><i class="fa-solid fa-book"></i></div>
                         <div class="index-text">
-                            <strong>Glosario</strong>
-                            <span>Topología, argot agronáutico y panantropología</span>
+                            <strong data-i18n="index.item3_title"></strong>
+                            <span data-i18n="index.item3_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
@@ -204,8 +235,8 @@
                         <div class="index-num">4</div>
                         <div class="index-icon"><i class="fa-solid fa-dna"></i></div>
                         <div class="index-text">
-                            <strong>Linajes</strong>
-                            <span>Los cuatro centrales y los tres emergentes</span>
+                            <strong data-i18n="index.item4_title"></strong>
+                            <span data-i18n="index.item4_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
@@ -215,8 +246,8 @@
                         <div class="index-num">5</div>
                         <div class="index-icon"><i class="fa-solid fa-dice"></i></div>
                         <div class="index-text">
-                            <strong>Acción y reacción</strong>
-                            <span>Resumen de las tiradas de dados</span>
+                            <strong data-i18n="index.item5_title"></strong>
+                            <span data-i18n="index.item5_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
@@ -226,8 +257,8 @@
                         <div class="index-num">6</div>
                         <div class="index-icon"><i class="fa-solid fa-user-pen"></i></div>
                         <div class="index-text">
-                            <strong>Hoja de personaje</strong>
-                            <span>Ficha de juego y referencia r&aacute;pida</span>
+                            <strong data-i18n="index.item6_title"></strong>
+                            <span data-i18n-html="index.item6_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
@@ -237,8 +268,8 @@
                         <div class="index-num">7</div>
                         <div class="index-icon"><i class="fa-solid fa-user-pen"></i></div>
                         <div class="index-text">
-                            <strong>Hoja del barco</strong>
-                            <span>Estadísticas del barco y la tripulación</span>
+                            <strong data-i18n="index.item7_title"></strong>
+                            <span data-i18n="index.item7_desc"></span>
                         </div>
                         <div class="index-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                     </a>
