@@ -244,6 +244,25 @@ p {
     margin-bottom: 2px;
 }
 
+.term-row {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.term-row .term-name {
+    min-width: 130px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.term-row .term-expl {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #444;
+}
+
 /* Section 2 */
 .corte-layout {
     display: flex;
